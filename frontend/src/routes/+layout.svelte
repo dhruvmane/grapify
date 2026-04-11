@@ -1,5 +1,6 @@
 <script lang="ts">
 	import favicon from '$lib/assets/favicon.svg';
+	import { ClerkProvider } from 'svelte-clerk';
 	import { onMount } from 'svelte';
 	import Lenis from 'lenis';
 
@@ -18,4 +19,6 @@
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
-{@render children()}
+<ClerkProvider>
+	{@render children()}
+</ClerkProvider>

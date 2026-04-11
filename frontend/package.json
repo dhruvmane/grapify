@@ -25,7 +25,11 @@
 		"vite": "^7.3.1"
 	},
 	"dependencies": {
+		"better-auth": "^1.5.5",
+		"better-sqlite3": "^12.8.0",
 		"gsap": "^3.14.2",
-		"lenis": "^1.3.18"
+		"lenis": "^1.3.18",
+		"next-auth": "^5.0.0-beta.30",
+		"svelte-clerk": "^1.1.3"
 	}
 }

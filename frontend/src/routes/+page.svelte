@@ -63,6 +63,11 @@
 
 <script lang=ts>
     import '../app.css';
+
+    function auth() {
+        (window as Window).location = 'https://poetic-pup-38.accounts.dev/sign-in?redirect_url=http%3A%2F%2Flocalhost%3A5173%2Fdashboard';
+    }
+    
 </script>
 
 
@@ -79,7 +84,6 @@
     </div>
     <!--Login / Register Buttons-->
     <div class="button-field">
-        <button class="button" title="button"> Log In </button>
-        <button class="button" title="button"> Register </button>
+        <button class="button" title="button" onclick={auth}> Log In </button>
     </div>
 </main>

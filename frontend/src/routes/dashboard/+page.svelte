@@ -7,45 +7,14 @@
         color: rgb(255, 227, 190);
     }   
 
-    .netProfit-field {
-        font-family: 'Gravitas One';
-        font-size: 100px;
-        margin: 0;
-        margin-top: 10vh;
-        margin-left: 575px;
-        margin-right: 575px;
-        padding: 0;
-        background-color: rgb(24, 24, 24);
-    }
-
-    .netProfit-green {
-        color: rgb(137, 255, 137);
-    }
-
-    .netProfit-red {
-        color: rgb(255, 107, 107);
-    }
-
-    .transactionLog-field {
-        font-family: 'Google Sans Code';
-        font-size: 20px;
-
-        margin: 0;
-        padding: 0;
-        padding-left: 135px;
-        padding-right: 135px;
-        padding-bottom: 600px;
-        background-color: black;
-    }
-
-    .ux {
-        display: inline-block;
-    }
-
 </style>
 
 <script lang=ts>
     import '../../app.css'
+    import { useClerkContext } from 'svelte-clerk/client';
+
+    const authCtx = useClerkContext()
+    console.log(authCtx)
 
     let isRed = $state(false)
     let netProfit = $state(format_number(3000))
@@ -74,6 +43,7 @@
         formatted_number = formatted_number.split("").reverse().join("");
         return formatted_number
     }
+
 
 </script>
 
