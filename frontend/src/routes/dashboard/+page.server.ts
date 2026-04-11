@@ -2,12 +2,12 @@
 import { redirect } from '@sveltejs/kit';
 import type { PageServerLoad } from './$types';
 
-export const load: PageServerLoad = ({ locals }) => {
-  const { userId } = locals.auth();
+// export const load: PageServerLoad = ({ locals }) => {
+//   const { userId } = locals.auth();
 
-  if (!userId) {
-    return redirect(307, '/');
-  }
+//   if (!userId) {
+//     return redirect(307, '/login');
+//   }
 
-  return { userId };
-};
+//   return { userId };
+// };
