@@ -1,0 +1,63 @@
+@import 'tailwindcss';
+
+
+* {
+     @apply select-none;
+}
+
+button, a {
+     @apply hover:cursor-pointer hover:underline
+}
+
+h1 {
+     font-family: "Fjalla One";
+}
+
+p {
+     font-family: "Indie Flower";
+}
+
+@font-face {
+     font-family: "Cutive Regular";
+     src: url("$lib/font/cutiveregular.ttf");
+}
+
+@font-face {
+     font-family: "Fjalla One";
+     src: url("$lib/font/fjallaone.ttf");
+}
+
+@font-face {
+     font-family: "Google Sans";
+     src: url("$lib/font/googlesans.ttf");
+}
+
+@font-face {
+     font-family: "Indie Flower";
+     src: url("$lib/font/indieflower.ttf");
+}
+
+@font-face {
+     font-family: "Instrument Serif";
+     src: url("$lib/font/instrumentserif.ttf");
+}
+
+@font-face {
+     font-family: "Lexend";
+     src: url("$lib/font/lexend.ttf");
+}
+
+@font-face {
+     font-family: "Notable";
+     src: url("$lib/font/notable.ttf");
+}
+
+@font-face {
+     font-family: "Rock Salt";
+     src: url("$lib/font/rocksalt.ttf");
+}
+
+@font-face {
+     font-family: "Special Elite";
+     src: url("$lib/font/specialelite.ttf");
+}
